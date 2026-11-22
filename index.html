@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Weton — Cek Weton Jawa dari Tanggal Lahir</title>
+<meta name="description" content="Isi tanggal lahir, langsung tahu weton Jawa kamu (hari + pasaran), neptu, umur detail, total hari hidup, zodiak, dan hitung mundur ulang tahun berikutnya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Kalkulator Weton · Jumat Legi · Neptu Berapa · Primbon Jawa · Cek Tanggal Lahirmu · </span>
+    <span>Kalkulator Weton · Jumat Legi · Neptu Berapa · Primbon Jawa · Cek Tanggal Lahirmu · </span>
+  </div>
+</div>
+
+<header class="app-header">
+  <h1>Kalkulator <span class="hl">Weton</span></h1>
+  <p class="app-sub">weton hari ini: <strong id="today-weton">…</strong> — wetonmu apa? ↓</p>
+</header>
+
+<main>
+  <section class="panel" aria-label="Cek weton">
+    <h2>Isi tanggal lahirmu</h2>
+    <div class="field">
+      <label for="input-name">Nama (opsional)</label>
+      <input id="input-name" type="text" maxlength="30" placeholder="mis. Budi">
+    </div>
+    <div class="field">
+      <label for="input-date">Tanggal lahir</label>
+      <input id="input-date" type="date" min="1900-01-01" max="2100-12-31">
+    </div>
+    <button id="check-btn" class="tw-download" type="button">Cek Weton Saya</button>
+    <p class="fineprint">Hasil primbon di halaman ini buat hiburan dan pelestarian budaya ya — bukan ramalan pasti.</p>
+  </section>
+
+  <section class="panel" id="result-panel" hidden aria-label="Hasil weton">
+    <p class="result-kicker" id="r-kicker">weton kamu</p>
+    <h2 class="weton-big" id="r-weton">—</h2>
+    <p class="result-verdict" id="r-verdict">—</p>
+    <div class="result-facts" id="r-facts"></div>
+    <p class="result-note" id="r-note">—</p>
+  </section>
+</main>
+
+<footer class="app-footer">
+  <p>Dibuat oleh Remike Dev · Kalkulator Weton — dihitung lokal di browser.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
