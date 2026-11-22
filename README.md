@@ -1,5 +1,7 @@
 # Kalkulator Weton
 
+**Demo live:** [kalkulator-weton di GitHub Pages](https://kirax-12.github.io/kalkulator-weton/)
+
 Web app statis buat mengecek weton Jawa dari tanggal lahir: hari + pasaran, neptu, watak menurut primbon, umur detail, total hari hidup, zodiak, dan hitung mundur ulang tahun berikutnya. Lengkap dengan weton hari ini di bagian atas halaman.
 
 Dibuat oleh **Remike Dev**.
